@@ -1,0 +1,75 @@
+@use "vars" as *;
+
+.about-company {
+    .about-company__inner {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: $section_space;
+        align-items: start;
+    }
+
+    h2 {
+        font-family: "Manrope", sans-serif;
+        font-size: 28px;
+        font-weight: 200;
+        line-height: 1.2;
+        margin: 0;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .about-company__text {
+        margin-top: 20px;
+
+        p + p {
+            margin-top: 12px;
+        }
+    }
+
+    .about-company__stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $section_space;
+    }
+
+    .about-company__stat-number {
+        font-family: $head_fonts;
+        font-size: 72px;
+        font-weight: 200;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .about-company__stat-text {
+        font-family: $head_fonts;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 820px) {
+    .about-company {
+        .about-company__inner {
+            grid-template-columns: 1fr;
+        }
+
+        .about-company__stats {
+            max-width: 520px;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .about-company {
+        .about-company__stats {
+            grid-template-columns: 1fr;
+        }
+
+        .about-company__stat-number {
+            font-size: 56px;
+        }
+    }
+}

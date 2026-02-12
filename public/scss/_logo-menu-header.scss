@@ -1,0 +1,41 @@
+@use "vars" as *;
+
+.logo-menu-header {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .logo-menu-header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        gap: $section_space;
+    }
+
+    .logo-menu-header__logo {
+        display: inline-flex;
+        align-items: center;
+
+        img {
+            height: 38px;
+            width: auto;
+            display: block;
+        }
+    }
+
+    .logo-menu-header__menu {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: $section_space;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .logo-menu-header {
+        .logo-menu-header__menu {
+            display: none;
+        }
+    }
+}
