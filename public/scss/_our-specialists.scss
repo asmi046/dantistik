@@ -1,10 +1,10 @@
-@use 'vars' as *;
+@use "vars" as *;
 
 .our-specialists {
     background-color: $gray_bg_color;
 
     h2 {
-        font-family: 'Manrope', sans-serif;
+        font-family: "Manrope", sans-serif;
         font-size: 28px;
         font-weight: 200;
         line-height: 1.2;
