@@ -1,4 +1,4 @@
-@use 'vars' as *;
+@use "vars" as *;
 
 .site-footer {
     background-color: $black_color;
@@ -41,7 +41,7 @@
     }
 
     h3 {
-        font-family: 'Manrope', sans-serif;
+        font-family: "Manrope", sans-serif;
         font-size: 22px;
         font-weight: 700;
         margin: 0;
@@ -71,7 +71,7 @@
     }
 
     .site-footer__disclaimer {
-        font-family: 'Manrope', sans-serif;
+        font-family: "Manrope", sans-serif;
         font-size: 12px;
         font-weight: 400;
         line-height: 1.5;
@@ -84,7 +84,7 @@
         gap: 8px;
 
         a {
-            font-family: 'Manrope', sans-serif;
+            font-family: "Manrope", sans-serif;
             font-size: 12px;
             font-weight: 400;
             line-height: 1.4;
