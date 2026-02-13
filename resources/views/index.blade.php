@@ -120,4 +120,141 @@
         </div>
     </section>
 
+    <section class="our-services" id="our-services">
+        <div class="container">
+            <h2>Наши <strong>услуги</strong></h2>
+
+            <div class="our-services__grid">
+                <div class="our-services__card">
+                    <div class="our-services__photo">
+                        <img src="{{ asset('tmp_data/services/service_1.jpg') }}" alt="Терапефтическая стоматология" />
+                    </div>
+                    <div class="our-services__body">
+                        <p class="our-services__title">Терапефтическая стоматология</p>
+                        <p class="our-services__text">Диагностика, лечение кариеса, лечение каналов,рестоврация зубов, профилактика</p>
+                    </div>
+                </div>
+
+                <div class="our-services__card">
+                    <div class="our-services__photo">
+                        <img src="{{ asset('tmp_data/services/service_2.jpg') }}" alt="Хирургическая стоматология" />
+                    </div>
+                    <div class="our-services__body">
+                        <p class="our-services__title">Хирургическая стоматология</p>
+                        <p class="our-services__text">Удаление зубов, имплантация, лечение воспалений</p>
+                    </div>
+                </div>
+
+                <div class="our-services__card">
+                    <div class="our-services__photo">
+                        <img src="{{ asset('tmp_data/services/service_3.jpg') }}" alt="Гигиена и профилактика" />
+                    </div>
+                    <div class="our-services__body">
+                        <p class="our-services__title">Гигиена и профилактика</p>
+                        <p class="our-services__text">Снятие зубного камня, удаление налета, полировка зубов, вторирование</p>
+                    </div>
+                </div>
+
+                <div class="our-services__card">
+                    <div class="our-services__photo">
+                        <img src="{{ asset('tmp_data/services/service_4.jpg') }}" alt="Ортопедическая стоматология" />
+                    </div>
+                    <div class="our-services__body">
+                        <p class="our-services__title">Ортопедическая стоматология</p>
+                        <p class="our-services__text">Микропротезирование, коронки, съемное протезирование, имплпнтпты</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-advantages" id="our-advantages">
+        <div class="container">
+            <h2>Наши <strong>преимущества</strong></h2>
+
+            <div class="our-advantages__grid">
+                <div class="our-advantages__card">
+                    <img class="our-advantages__icon" src="{{ asset('img/adv/adv_1.svg') }}" alt="" />
+                    <h3 class="our-advantages__title">Современные технологии и точная диагностика</h3>
+                    <p class="our-advantages__text">Используем цифровые рентген-аппараты,3D-томографию и увеличительную
+                        оптику, что позволяет выявлять проблемы на ранней стадии и лечить максимально точно.</p>
+                </div>
+
+                <div class="our-advantages__card">
+                    <img class="our-advantages__icon" src="{{ asset('img/adv/adv_2.svg') }}" alt="" />
+                    <h3 class="our-advantages__title">Опытные врачи с узкой специализацией</h3>
+                    <p class="our-advantages__text">Каждый врач занимается своим направлением — от терапии до имплантации и
+                        ортодонтии, что гарантирует профессиональный и предсказуемый результат.</p>
+                </div>
+
+                <div class="our-advantages__card">
+                    <img class="our-advantages__icon" src="{{ asset('img/adv/adv_3.svg') }}" alt="" />
+                    <h3 class="our-advantages__title">Комфорт и безопасность пациента</h3>
+                    <p class="our-advantages__text">Безболезненное лечение, стерильность по международным стандартам и
+                        внимательное отношение к каждому пациенту на всех этапах лечения.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <div class="contacts__left">
+                    <div class="contacts__content">
+                        <h2>Стоматологическая клиника <strong>ДАНТИСТиК</strong></h2>
+                        <p class="contacts__address">г. Курск, пр-т Вячеслава Клыкова, д. 16</p>
+                        <a class="contacts__phone" href="tel:+74712310810">+7 (4712) 310-810</a>
+                        <a class="contacts__email" href="mailto:dantistik46@yandex.ru">dantistik46@yandex.ru</a>
+                        <h4>Время работы:</h4>
+                        <p class="contacts__hours">пн-пт: 8:30- 18:30<br>Сб: 8:30-15:00<br>воскресенье - выходной</p>
+                    </div>
+                </div>
+
+                <div class="contacts__right">
+                    <x-map.map-in-page name="Дантистик" geo="51.723762, 36.138110"
+                        adres="г. Курск, пр-т Вячеслава Клыкова, д. 16" phone="+7 (4712) 310-810"></x-map.map-in-page>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="site-footer" id="site-footer">
+        <div class="container">
+            <div class="site-footer__top">
+                <div class="site-footer__col site-footer__col--logo">
+                    <a class="site-footer__logo" href="{{ route('home') }}">
+                        <img src="{{ asset('img/logo_white.svg') }}" alt="Логотип" />
+                    </a>
+                    <x-bvi-btn></x-bvi-btn>
+                </div>
+
+                <div class="site-footer__col">
+                    <h3>Наши услуги</h3>
+                    <x-menues.puncts></x-menues.puncts>
+                </div>
+
+                <div class="site-footer__col">
+                    <h3>Полезная информация</h3>
+                    <x-menues.puncts></x-menues.puncts>
+                </div>
+
+                <div class="site-footer__col">
+                    <h3>Полезная информация</h3>
+                    <a class="site-footer__phone" href="tel:+74712310810">+7 (4712) 310-810</a>
+                    <a class="site-footer__email" href="mailto:dantistik46@yandex.ru">dantistik46@yandex.ru</a>
+                </div>
+            </div>
+
+            <div class="site-footer__bottom">
+                <p class="site-footer__disclaimer">Информация, предоставленная на данном сайте не является публичной офертой или коммерческим предложением. Вся информация размещена с ознакомительной целью и не должна использоваться для самостоятельной диагностики либо лечения. Имеются противопоказания, необходима консультация специалиста. Мы используем cookie-файлы для удобства использования данного сайта. Оставаясь на сайте, вы соглашаетесь с использованием файлов cookie.</p>
+
+                <div class="site-footer__links">
+                    <a href="#">Согласие на обработку персональных данных</a>
+                    <a href="#">Политика в сфере обработки персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection
