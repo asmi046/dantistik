@@ -1,0 +1,72 @@
+@use 'vars' as *;
+
+.our-specialists {
+    background-color: $gray_bg_color;
+
+    h2 {
+        font-family: 'Manrope', sans-serif;
+        font-size: 28px;
+        font-weight: 200;
+        line-height: 1.2;
+        margin: 0;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .our-specialists__grid {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $section_space;
+    }
+
+    .our-specialists__card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our-specialists__photo {
+        height: 220px;
+        border-radius: $border_rad;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    .our-specialists__name {
+        margin-top: 12px;
+        font-family: $head_fonts;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .our-specialists__role {
+        margin-top: 6px;
+        font-family: $head_fonts;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 820px) {
+    .our-specialists {
+        .our-specialists__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .our-specialists {
+        .our-specialists__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}

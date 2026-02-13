@@ -80,4 +80,44 @@
         </div>
     </section>
 
+    <section class="our-specialists" id="our-specialists">
+        <div class="container">
+            <h2>Наши <strong>Специалисты</strong></h2>
+
+            <div class="our-specialists__grid">
+                <div class="our-specialists__card">
+                    <div class="our-specialists__photo">
+                        <img src="{{ asset('img/tmp_sp.jpg') }}" alt="Иванов Николай Петрович" />
+                    </div>
+                    <p class="our-specialists__name">Иванов Николай Петрович</p>
+                    <p class="our-specialists__role">хирург</p>
+                </div>
+
+                <div class="our-specialists__card">
+                    <div class="our-specialists__photo">
+                        <img src="{{ asset('img/tmp_sp.jpg') }}" alt="Иванов Николай Петрович" />
+                    </div>
+                    <p class="our-specialists__name">Иванов Николай Петрович</p>
+                    <p class="our-specialists__role">хирург</p>
+                </div>
+
+                <div class="our-specialists__card">
+                    <div class="our-specialists__photo">
+                        <img src="{{ asset('img/tmp_sp.jpg') }}" alt="Иванов Николай Петрович" />
+                    </div>
+                    <p class="our-specialists__name">Иванов Николай Петрович</p>
+                    <p class="our-specialists__role">хирург</p>
+                </div>
+
+                <div class="our-specialists__card">
+                    <div class="our-specialists__photo">
+                        <img src="{{ asset('img/tmp_sp.jpg') }}" alt="Иванов Николай Петрович" />
+                    </div>
+                    <p class="our-specialists__name">Иванов Николай Петрович</p>
+                    <p class="our-specialists__role">хирург</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection
