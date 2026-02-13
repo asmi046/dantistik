@@ -29,7 +29,9 @@
 <body>
     @include('allicon')
     <main id="main">
+        <x-header-all></x-header-all>
         @yield('main')
+        <x-footer-all></x-footer-all>
     </main>
 </body>
 
