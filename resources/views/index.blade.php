@@ -29,7 +29,7 @@
         <div class="container">
             <div class="about-company__inner">
                 <div class="about-company__left">
-                    <h2>Стоматологическая клиника
+                    <h2>Стоматологическая клиника<br>
                         <strong>ДАНТИСТиК</strong>
                     </h2>
 

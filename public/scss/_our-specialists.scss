@@ -45,6 +45,7 @@
         font-family: $head_fonts;
         font-size: 22px;
         font-weight: 500;
+        line-height: 1.2;
     }
 
     .our-specialists__role {
@@ -66,7 +67,7 @@
 @media (max-width: 520px) {
     .our-specialists {
         .our-specialists__grid {
-            grid-template-columns: 1fr;
+            gap: 20px;
         }
     }
 }

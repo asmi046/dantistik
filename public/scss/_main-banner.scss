@@ -18,7 +18,7 @@
         z-index: 1;
     }
 
-    .main-banner__video {
+    &__video {
         position: absolute;
         inset: 0;
         width: 100%;
@@ -32,7 +32,7 @@
         z-index: 2;
     }
 
-    .main-banner__content {
+    &__content {
         color: white;
         max-width: 720px;
     }
