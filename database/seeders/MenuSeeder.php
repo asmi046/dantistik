@@ -35,81 +35,70 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'Контакты',
                 'order' => 1,
-                'lnk' => '#',
+                'lnk' => '/contacts',
             ],
         ];
 
         DB::table('menus')->insert($data);
 
-        // $footer_menu = [
-        //     [
-        //         'menu_name' => 'Меню в подвале',
-        //         'title' => 'О компании',
-        //         'order' => 1,
-        //         'lnk' => "#",
-        //     ],
-        //     [
-        //         'menu_name' => 'Меню в подвале',
-        //         'title' => 'Цены',
-        //         'order' => 2,
-        //         'lnk' => "/price",
-        //     ],
-        //     [
-        //         'menu_name' => 'Меню в подвале',
-        //         'title' => 'Сваи',
-        //         'order' => 3,
-        //         'lnk' => "'/products",
-        //     ],
-        //     [
-        //         'menu_name' => 'Меню в подвале',
-        //         'title' => 'Галерея',
-        //         'order' => 4,
-        //         'lnk' => "#",
-        //     ],
-        //     [
-        //         'menu_name' => 'Меню в подвале',
-        //         'title' => 'FAQ',
-        //         'order' => 7,
-        //         'lnk' => "/faq",
-        //     ],
-        // ];
+        $footer_menu = [
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'Специалисты',
+                'order' => 1,
+                'lnk' => '#',
+            ],
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'Услуги',
+                'order' => 1,
+                'lnk' => '#',
+            ],
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'Цены',
+                'order' => 1,
+                'lnk' => '#',
+            ],
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'Контакты',
+                'order' => 1,
+                'lnk' => '/contacts',
+            ],
+        ];
 
-        // DB::table("menus")->insert($footer_menu);
+        DB::table('menus')->insert($footer_menu);
 
-        // $footer_menu_2 = [
+        $footer_menu_2 = [
 
-        //     [
-        //         'menu_name' => 'Полезная информация',
-        //         'title' => 'Акции',
-        //         'order' => 5,
-        //         'lnk' => "/sales",
-        //     ],
-        //     [
-        //         'menu_name' => 'Полезная информация',
-        //         'title' => 'Отзывы',
-        //         'order' => 6,
-        //         'lnk' => "/review",
-        //     ],
-        //     [
-        //         'menu_name' => 'Полезная информация',
-        //         'title' => 'Оплата и доставка',
-        //         'order' => 8,
-        //         'lnk' => "#",
-        //     ],
-        //     [
-        //         'menu_name' => 'Полезная информация',
-        //         'title' => 'Сертификаты',
-        //         'order' => 9,
-        //         'lnk' => "/certificat",
-        //     ],
-        //     [
-        //         'menu_name' => 'Полезная информация',
-        //         'title' => 'Контакты',
-        //         'order' => 10,
-        //         'lnk' => "/contacts",
-        //     ],
-        // ];
+            [
+                'menu_name' => 'Услуги в подвале',
+                'title' => 'Терапефтическая стоматология',
+                'order' => 1,
+                'lnk' => '#',
+            ],
+            [
+                'menu_name' => 'Услуги в подвале',
+                'title' => 'Хирургическая стоматология',
+                'order' => 2,
+                'lnk' => '#',
+            ],
+            [
+                'menu_name' => 'Услуги в подвале',
+                'title' => 'Гигиена и профилактика',
+                'order' => 3,
+                'lnk' => '#',
+            ],
+            [
+                'menu_name' => 'Услуги в подвале',
+                'title' => 'Ортопедическая стоматология',
+                'order' => 4,
+                'lnk' => '#',
+            ],
 
-        // DB::table("menus")->insert($footer_menu_2);
+        ];
+
+        DB::table('menus')->insert($footer_menu_2);
     }
 }

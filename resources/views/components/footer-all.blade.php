@@ -10,12 +10,12 @@
 
                 <div class="site-footer__col">
                     <h3>Наши услуги</h3>
-                    <x-menues.puncts></x-menues.puncts>
+                    <x-menues.puncts name="Услуги в подвале"></x-menues.puncts>
                 </div>
 
                 <div class="site-footer__col">
                     <h3>Полезная информация</h3>
-                    <x-menues.puncts></x-menues.puncts>
+                    <x-menues.puncts name="Меню в подвале"></x-menues.puncts>
                 </div>
 
                 <div class="site-footer__col">

@@ -16,6 +16,6 @@
             <x-menues.puncts></x-menues.puncts>
         </div>
 
-        <a class="button" href="#">Заказать звонок</a>
+        <a class="button" href="#showModal">Заказать звонок</a>
     </div>
 </section>

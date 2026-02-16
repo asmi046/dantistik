@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             SeoDataSeeder::class,
             ParametrSeeder::class,
             ContactSeeder::class,
+            PageSeeder::class,
         ]);
     }
 }

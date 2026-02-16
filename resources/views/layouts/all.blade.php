@@ -16,6 +16,9 @@
 
     <meta name="_token" content="{{ csrf_token() }}">
 
+    <script src="{{ asset('bvi/js/bvi.js') }}"></script>
+    <link href="{{ asset('bvi/css/bvi.min.css') }}" rel="stylesheet">
+
     @vite(['resources/css/app.css', 'resources/js/app.js', 'public/scss/main.scss'])
 
     <script>
@@ -33,6 +36,14 @@
         @yield('main')
         <x-footer-all></x-footer-all>
     </main>
+
+    <div class="modal_win" id="modal_app">
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста"
+            subtitle="Мы свяжемся с Вами в течении 15 минут"></modal-window>
+        <cookies-warning privacy-policy-link="{{ route('page', 'politika-v-oblasti-obrabotki-personalnyx-dannyx') }}"
+            cookies-info-link="{{ route('page', 'o-failax-cookie') }}"
+            privacy-policy-accept-link="{{ route('page', 'soglasie-na-obrabotku-personalnyx-dannyx') }}" />
+    </div>
 </body>
 
 </html>
