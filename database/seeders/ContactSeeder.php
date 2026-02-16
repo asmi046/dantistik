@@ -43,6 +43,16 @@ class ContactSeeder extends Seeder
                     'title' => 'Адрес компании',
                     'value' => 'г. Курск, пр-т Вячеслава Клыкова, д. 16',
                 ],
+                [
+                    'name' => 'licenzia',
+                    'title' => 'Лицензия',
+                    'value' => 'Л041-01147-46/00300167',
+                ],
+                [
+                    'name' => 'licenzia_organ',
+                    'title' => 'Лицензирующий орган',
+                    'value' => 'Министерство здравоохранения Курской области',
+                ],
 
                 [
                     'name' => 'work_time',
