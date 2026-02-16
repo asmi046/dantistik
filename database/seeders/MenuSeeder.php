@@ -62,6 +62,12 @@ class MenuSeeder extends Seeder
             ],
             [
                 'menu_name' => 'Меню в подвале',
+                'title' => 'Контролирующие организации',
+                'order' => 1,
+                'lnk' => '/control_organization',
+            ],
+            [
+                'menu_name' => 'Меню в подвале',
                 'title' => 'Контакты',
                 'order' => 1,
                 'lnk' => '/contacts',

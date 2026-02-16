@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\ControlOrganization;
 
 class ContactsController extends Controller
 {
@@ -15,5 +16,12 @@ class ContactsController extends Controller
         }
 
         return view('contacts', ['contacts' => $opt]);
+    }
+
+    public function control_organization()
+    {
+        $organizations = ControlOrganization::orderBy('sort_order')->get();
+
+        return view('control-organizations', ['organizations' => $organizations]);
     }
 }

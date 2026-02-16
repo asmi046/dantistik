@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             ParametrSeeder::class,
             ContactSeeder::class,
             PageSeeder::class,
+            ControlOrganizationSeeder::class,
         ]);
     }
 }
