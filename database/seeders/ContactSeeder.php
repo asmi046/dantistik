@@ -17,7 +17,7 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'site_name',
                     'title' => 'Имя сайта',
-                    'value' => 'Стоматологическая клиника «ДАНТИСТиК»',
+                    'value' => 'Стоматологическая клиника <strong>«ДАНТИСТиК»</strong>',
                 ],
 
                 [

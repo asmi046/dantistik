@@ -29,7 +29,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'Цены',
                 'order' => 1,
-                'lnk' => '#',
+                'lnk' => '/prices',
             ],
             [
                 'menu_name' => 'Главное меню',
@@ -58,7 +58,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Меню в подвале',
                 'title' => 'Цены',
                 'order' => 1,
-                'lnk' => '#',
+                'lnk' => '/prices',
             ],
             [
                 'menu_name' => 'Меню в подвале',

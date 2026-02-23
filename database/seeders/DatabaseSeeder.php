@@ -21,6 +21,11 @@ class DatabaseSeeder extends Seeder
             ContactSeeder::class,
             PageSeeder::class,
             ControlOrganizationSeeder::class,
+            ServiceSeeder::class,
+            SpecialistSeeder::class,
+            PriceSeederTer::class,
+            PriceSeederOrt::class,
+            PriceSeederOrt::class,
         ]);
     }
 }
