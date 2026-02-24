@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             PriceSeederTer::class,
             PriceSeederHir::class,
             PriceSeederOrt::class,
+            UserSeeder::class,
         ]);
     }
 }
