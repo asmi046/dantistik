@@ -1,0 +1,70 @@
+@use "vars" as *;
+
+.price_section {
+    padding-top: 0;
+    .price_section_items {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        .price_section_item {
+            .response {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 20px;
+                .price_item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .service {
+                        margin-left: 10px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        span.name {
+                            flex: 1;
+                        }
+                        span.code {
+                            color: $main_color;
+                            width: 150px;
+                        }
+                    }
+
+                    .dots {
+                        flex-grow: 1;
+                        border-bottom: 1px dotted $black_color;
+                        margin: auto 10px 3px 10px;
+                    }
+
+                    .price {
+                        min-width: 100px;
+                    }
+                }
+            }
+
+            summary {
+                font-weight: bold;
+                font-size: 18px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .price_section .price_section_items .price_section_item .response .price_item {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $gray_border_color;
+        .dots {
+            border: none;
+        }
+
+        .price {
+            text-align: right;
+        }
+        .service {
+            flex-direction: column;
+        }
+    }
+}

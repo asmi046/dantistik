@@ -1,35 +1,38 @@
-@use '../vars' as *;
+@use "../vars" as *;
 
 details {
     display: flex;
-
-    summary{
+    width: 100%;
+    flex-direction: column;
+    summary {
         list-style: none;
         border: 1px solid $gray_border_color;
-        padding: 20px  50px 20px 30px;
+        padding: 20px 50px 20px 30px;
         background-color: $main_color;
         border-radius: $border_rad;
         position: relative;
 
-        &::before{
-            content: "";
+        &::before {
+            content: "▼";
             background-color: white;
             position: absolute;
             border-radius: 10px;
-            width:30px;
-            height:30px;
+            width: 30px;
+            height: 30px;
             right: 10px;
             top: calc(50% - 15px);
+            text-align: center;
+            line-height: 36px;
+            color: $main_color;
         }
     }
 
-    &[open] summary{
+    &[open] summary {
         background-color: $hover_color;
     }
 
-    &[open] summary:before{
-        content: "";
+    &[open] summary:before {
+        content: "▼";
         transform: rotate(180deg);
     }
-
 }

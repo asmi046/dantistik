@@ -4,17 +4,7 @@
 
         <div class="our-specialists__grid">
             @foreach ($specialists as $specialist)
-                <div class="our-specialists__card">
-                    <div class="our-specialists__photo">
-                        @if ($specialist->photo)
-                            <img src="{{ Storage::url($specialist->photo) }}" alt="{{ $specialist->fio }}" />
-                        @else
-                            <img src="{{ asset('img/no_photo.webp') }}" alt="{{ $specialist->fio }}" />
-                        @endif
-                    </div>
-                    <p class="our-specialists__name">{{ $specialist->fio }}</p>
-                    <p class="our-specialists__role">{{ $specialist->position }}</p>
-                </div>
+                <x-cards.specialist :item="$specialist"></x-cards.specialist>
             @endforeach
 
         </div>

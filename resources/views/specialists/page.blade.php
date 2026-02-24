@@ -1,0 +1,47 @@
+@extends('layouts.all')
+
+@section('main')
+    <section class="personal_page_header">
+        <div class="container">
+            <x-breadcrumbs.main :title="$specialist->fio"></x-breadcrumbs.main>
+
+
+            <div class="personal_page_main_content">
+                <div class="personal_page_main_content_left">
+                    @if ($specialist->photo)
+                        <img src="{{ Storage::url($specialist->photo) }}" alt="{{ $specialist->title }}">
+                    @else
+                        <img src="{{ asset('img/no_photo.webp') }}" alt="{{ $specialist->title }}">
+                    @endif
+                </div>
+                <div class="personal_page_main_content_right">
+                    <h1 class="personal_page_title">{{ $specialist->fio }}</h1>
+                    <p class="personal_page_position">{{ $specialist->position }}</p>
+                    <div class="text_styles personal_page_description ">
+                        {!! $specialist->description !!}
+                    </div>
+
+                    @if ($specialist->certificates)
+                        <div class="personal_page_certificates">
+                            <h2>Аккредитация</h2>
+                            <div class="personal_page_certificates_items">
+                                @foreach ($specialist->certificates as $certificate)
+                                    <a href="{{ Storage::url($certificate) }}" class="personal_page_certificates_item"
+                                        data-fslightbox="gallery">
+                                        <img src="{{ Storage::url($certificate) }}"
+                                            alt="Аккредитация {{ $specialist->title }}">
+                                    </a>
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <x-main.adv></x-main.adv>
+    <x-main.contacts></x-main.contacts>
+
+
+@endsection

@@ -1,7 +1,7 @@
 @extends('layouts.all')
 
 @section('main')
-    <x-headers.page-header title="Контакты нашей клиники"></x-headers.page-header>
+    <x-headers.page-header title="Цены на услуги"></x-headers.page-header>
     <section class="page_section">
         <div class="container">
             <section class="price_section">

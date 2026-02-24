@@ -11,6 +11,6 @@ class PriceController extends Controller
         $prices = Price::orderBy('sort_order')->get()->groupBy('section');
 
         // dd($prices);
-        return view('prices.index', compact('prices'));
+        return view('prices', compact('prices'));
     }
 }

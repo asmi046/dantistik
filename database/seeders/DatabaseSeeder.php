@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             ServiceSeeder::class,
             SpecialistSeeder::class,
             PriceSeederTer::class,
-            PriceSeederOrt::class,
+            PriceSeederHir::class,
             PriceSeederOrt::class,
         ]);
     }

@@ -17,13 +17,13 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'Специалисты',
                 'order' => 1,
-                'lnk' => '#',
+                'lnk' => '/specialists',
             ],
             [
                 'menu_name' => 'Главное меню',
                 'title' => 'Услуги',
                 'order' => 1,
-                'lnk' => '#',
+                'lnk' => '/services',
             ],
             [
                 'menu_name' => 'Главное меню',
@@ -46,13 +46,13 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Меню в подвале',
                 'title' => 'Специалисты',
                 'order' => 1,
-                'lnk' => '#',
+                'lnk' => '/specialists',
             ],
             [
                 'menu_name' => 'Меню в подвале',
                 'title' => 'Услуги',
                 'order' => 1,
-                'lnk' => '#',
+                'lnk' => '/services',
             ],
             [
                 'menu_name' => 'Меню в подвале',
