@@ -25,6 +25,11 @@ class ContactSeeder extends Seeder
                     'title' => 'Телефон',
                     'value' => '+7 (4712)310-810',
                 ],
+                [
+                    'name' => 'phone2',
+                    'title' => 'Телефон 2',
+                    'value' => '+7 (4712)310-810',
+                ],
 
                 [
                     'name' => 'tg_lnk',
@@ -57,7 +62,7 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'work_time',
                     'title' => 'Время работы',
-                    'value' => 'пн-пт: 8:30- 18:30<br>Сб: 8:30-15:00<br>воскресенье - выходной',
+                    'value' => 'пн-пт: 8:30- 18:30<br>Сб: 8:30-15:00<br>Воскресенье - выходной',
                 ],
 
                 [

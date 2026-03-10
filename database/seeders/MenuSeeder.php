@@ -80,7 +80,7 @@ class MenuSeeder extends Seeder
 
             [
                 'menu_name' => 'Услуги в подвале',
-                'title' => 'Терапефтическая стоматология',
+                'title' => 'Терапевтическая стоматология',
                 'order' => 1,
                 'lnk' => '#',
             ],

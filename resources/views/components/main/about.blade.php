@@ -9,7 +9,7 @@
                     </div>
                 </div>
 
-                <div class="about-company__right">
+                {{-- <div class="about-company__right">
                     <div class="about-company__stats">
                         <div class="about-company__stat">
                             <div class="about-company__stat-number">{!! $numbers['main_3']->title !!}</div>
@@ -24,7 +24,7 @@
                             <div class="about-company__stat-text">{!! $numbers['main_5']->value !!}</div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

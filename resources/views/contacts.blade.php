@@ -33,7 +33,7 @@
 
 
                             <p class="param mb-10">Адрес: {{ $contacts['adress'] }}</p>
-                            <p class="param mb-10">Режим работы: {{ $contacts['work_time'] }}</p>
+                            <p class="param mb-10">Режим работы: {!! $contacts['work_time'] !!}</p>
                             <p class="param mb-10">тел. <a class="phone"
                                     href="tel:+7{{ phone_format($contacts['phone']) }}">{{ $contacts['phone'] }}</a></p>
 

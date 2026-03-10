@@ -19,7 +19,7 @@
 .our-specialists__grid {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: $section_space;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .our-specialists__photo {
-    height: 220px;
+    height: 340px;
     border-radius: $border_rad;
     overflow: hidden;
 
@@ -59,6 +59,17 @@
 @media (max-width: 820px) {
     .our-specialists__grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-specialists__photo {
+        height: 200px;
+    }
+    .our-specialists__name {
+        font-size: 16px;
+    }
+    .our-specialists__role {
+        font-size: 14px;
+        line-height: 1.3;
     }
 }
 
