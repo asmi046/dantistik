@@ -24,7 +24,7 @@
     RewriteRule ^ index.php [L]
 </IfModule>
 
-AuthType Basic
-AuthName "Private zone. Only for administrator!"
-AuthUserFile /home/d/dantisxz/dantistik.ru/public/.htpasswd
-require user admin
+#AuthType Basic
+#AuthName "Private zone. Only for administrator!"
+#AuthUserFile /home/d/dantisxz/dantistik.ru/public/.htpasswd
+#require user admin
