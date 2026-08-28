@@ -52,6 +52,12 @@ final class MoonShineLayout extends AppLayout
                 static fn () => __('SEO'),
                 SeoDataResource::class,
             )->icon('chart-bar-square'),
+
+            MenuItem::make(
+                static fn () => __('Сброс кеша'),
+                fn () => route('cache_clear'),
+            )->icon('arrow-path-rounded-square'),
+
             ...parent::menu(),
         ];
     }

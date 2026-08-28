@@ -4,19 +4,16 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
-use App\Models\Tour;
-
-
-use App\Models\Review;
+use App\Models\Page\Page;
 use App\Models\SeoData;
-use MoonShine\UI\Fields\ID;
-use App\Models\TourCategory;
-use MoonShine\UI\Fields\Text;
-use MoonShine\UI\Fields\Image;
-use Illuminate\Database\Eloquent\Model;
+use App\Models\Service;
+use App\Models\Specialist;
 use MoonShine\Components\MoonShineComponent;
-use MoonShine\Laravel\Resources\ModelResource;
 use MoonShine\Laravel\Fields\Relationships\MorphTo;
+use MoonShine\Laravel\Resources\ModelResource;
+use MoonShine\UI\Fields\ID;
+use MoonShine\UI\Fields\Image;
+use MoonShine\UI\Fields\Text;
 
 /**
  * @extends ModelResource<SeoData>
@@ -27,7 +24,6 @@ class SeoDataResource extends ModelResource
 
     protected string $title = 'SEO';
 
-
     public function filters(): array
     {
         return [
@@ -36,7 +32,6 @@ class SeoDataResource extends ModelResource
             Text::make('Заголовок страницы', 'page_title')->sortable(),
         ];
     }
-
 
     /**
      * @return list<Field>
@@ -64,10 +59,10 @@ class SeoDataResource extends ModelResource
             Text::make('Описание SEO', 'seo_description'),
             Image::make('Изображение', 'img')->dir('seo'),
             Text::make('Заголовок страницы', 'page_title')->sortable(),
-            Text::make('Подзаголовок страницы', 'page_sub_title')->sortable(),
-            MorphTo::make("Объект", "seoable", resource: SeoDataResource::class)->types([
-                Tour::class => ['title', 'Туры'],
-                TourCategory::class => ['name', 'Категории туров'],
+            MorphTo::make('Объект', 'seoable', resource: SeoDataResource::class)->types([
+                Page::class => ['title', 'Страницы'],
+                Service::class => ['title', 'Услуги'],
+                Specialist::class => ['fio', 'Специалисты'],
             ])->nullable(),
         ];
     }
@@ -84,18 +79,18 @@ class SeoDataResource extends ModelResource
             Text::make('Описание SEO', 'seo_description'),
             Image::make('Изображение', 'img')->dir('seo'),
             Text::make('Заголовок страницы', 'page_title')->sortable(),
-            Text::make('Подзаголовок страницы', 'page_sub_title')->sortable(),
-            MorphTo::make("Объект", "seoable", resource: SeoDataResource::class)->types([
-                Tour::class => 'title',
-                TourCategory::class => 'name',
+            MorphTo::make('Объект', 'seoable', resource: SeoDataResource::class)->types([
+                Page::class => ['title', 'Страницы'],
+                Service::class => ['title', 'Услуги'],
+                Specialist::class => ['fio', 'Специалисты'],
             ]),
         ];
     }
 
     /**
-     * @param Seo $item
-     *
+     * @param  Seo  $item
      * @return array<string, string[]|string>
+     *
      * @see https://laravel.com/docs/validation#available-validation-rules
      */
     protected function rules($item): array
